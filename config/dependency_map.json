@@ -1,0 +1,57 @@
+{
+    "DBARRT_DBP_DAILY_VNM": {
+        "predecessors": [],
+        "successors": [
+            "DBARRT_FIN_RDM_DAILY_VNM"
+        ]
+    },
+    "DBARRT_SNAPSHOT_DAILY_VNM_COMPLETE": {
+        "predecessors": [],
+        "successors": [
+            "DBARRT_FIN_RDM_DAILY_VNM"
+        ]
+    },
+    "DBARRT_FIN_RDM_DAILY_VNM": {
+        "predecessors": [
+            "DBARRT_DBP_DAILY_VNM",
+            "DBARRT_SNAPSHOT_DAILY_VNM_COMPLETE"
+        ],
+        "successors": [
+            "DBARRT_FIN_ETB_RDM_DAILY_VNM_V10"
+        ]
+    },
+    "DBARRT_FIN_ETB_RDM_DAILY_VNM_V10": {
+        "predecessors": [
+            "DBARRT_FIN_RDM_DAILY_VNM"
+        ],
+        "successors": [
+            "DBARRT_FIN_ETB_REPORTS_DAILY_VNM_V10"
+        ]
+    },
+    "DBARRT_FIN_ETB_REPORTS_DAILY_VNM_V10": {
+        "predecessors": [
+            "DBARRT_FIN_ETB_RDM_DAILY_VNM_V10"
+        ],
+        "successors": [
+            "DBARRT_FIN_LIQUIDITY_RATIO_DAILY_VNM_V10"
+        ]
+    },
+    "DBARRT_FIN_LIQUIDITY_RATIO_DAILY_VNM_V10": {
+        "predecessors": [
+            "DBARRT_FIN_ETB_REPORTS_DAILY_VNM_V10"
+        ],
+        "successors": []
+    },
+    "DBARRT_KOR_FX_DAILY_VNM_V10": {
+        "predecessors": [],
+        "successors": [
+            "DBARRT_KOR_FX_VAL_DAILY_VNM_V10"
+        ]
+    },
+    "DBARRT_KOR_FX_VAL_DAILY_VNM_V10": {
+        "predecessors": [
+            "DBARRT_KOR_FX_DAILY_VNM_V10"
+        ],
+        "successors": []
+    }
+}
